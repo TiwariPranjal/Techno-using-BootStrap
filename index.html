@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: auto; /* Adjust height for smaller screens */
+            }
+            .features-icon {
+                font-size: 2rem; /* Adjust icon size for smaller screens */
+            }
+        }
+        @media (max-width: 576px) {
+            .footer {
+                text-align: center; /* Center align text on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg text-light" style="background-color:#1e686f;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">TECHNO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">About US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-easel-fill"></i> Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">App Development</a></li>
+                        <li><a class="dropdown-item" href="#">SEO</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Slide -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/istockphoto-1583260343-612x612.webp" class="d-block w-100" style="height: 550px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/istockphoto-1287065311-612x612.webp" class="d-block w-100" style="height: 550px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/istockphoto-1280385511-612x612.webp" class="d-block w-100" style="height: 550px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="display-6 mt-5 text-center mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing <br> Quasi quae dolores, quia libero incidunt architecto.</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Features -->
+<div class="row justify-content-evenly pt-3 pb-5">
+    <div class="col-md-3 text-center mt-5">
+        <h1 class="features-icon"><i class="bi bi-file-code"></i></h1>
+        <h5>Build for Developers</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, velit!</p>
+    </div>
+    <div class="col-md-3 text-center mt-5">
+        <h1 class="features-icon"><i class="bi bi-easel-fill"></i></h1>
+        <h5>Build for Developers</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, velit!</p>
+    </div>
+    <div class="col-md-3 text-center mt-5">
+        <h1 class="features-icon"><i class="bi bi-calendar3-range-fill"></i></h1>
+        <h5>Build for Developers</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, velit!</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="row justify-content-evenly pt-3 pb-5">
+    <div class="col-md-5">
+        <img src="image/im.jpg" class="img-fluid" alt="">
+    </div>
+
+    <div class="col-md-5">
+        <h5 class="mt-2">Website Development</h5>
+        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 25%"></div>
+        </div>
+
+        <h5 class="mt-2">App Development</h5>
+        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info" style="width: 50%"></div>
+        </div>
+
+        <h5 class="mt-2">Software Development</h5>
+        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning" style="width: 75%"></div>
+        </div>
+
+        <h5 class="mt-2">SEO</h5>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" style="width: 100%"></div>
+        </div>
+
+        <h5 class="mt-2">Marketing</h5>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-primary" style="width: 100%"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form -->
+<div class="row justify-content-evenly pt-3 pb-5" style="background-color: #f1f1f1;">
+    <div class="col-md-5 mt-5">
+        <h3 class="mb-3">Contact Us</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-5 mt-5">
+        <h3 class="mb-3">Address</h3>
+        <p>
+            1180 New Delhi, India <br>
+            New Delhi -11596 <br>
+            <i class="bi bi-telephone"></i> : 9876543210
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54004584305!2d77.04417463755273!3d28.527252740232022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1724159625753!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div class="row justify-content-evenly pt-3 pb-5">
+    <h3 class="text-center mt-2">FAQ</h3>
+    <div class="col-md-10">
+        <div class="accordion border" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="row justify-content-evenly bg-dark text-white pt-2 pb-5 footer ">
+    <div class="col-md-3 pt-4 ms-2">
+        <h3 class="pb-2">Tecno</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam illo cumque unde iste!</p>
+    </div>
+    <div class="col-md-3 pt-4 ms-2">
+        <h3 class="pb-2">Important Links</h3>
+        <p>
+            <a href="#" class="link-light text-decoration-none">Home</a><br>
+            <a href="#" class="link-light text-decoration-none">About Us</a><br>
+            <a href="#" class="link-light text-decoration-none">Contact Us</a><br>
+            <a href="#" class="link-light text-decoration-none">Our Team</a><br>
+            <a href="#" class="link-light text-decoration-none">Our Client</a><br>
+        </p>
+    </div>
+    <div class="col-md-3 pt-4 ms-2">
+        <h3 class="pb-2">Contact Us</h3>
+        <p>
+            1180 New Delhi, India <br>
+            New Delhi -11596 <br>
+            <i class="bi bi-telephone"></i> : 9876543210
+        </p>
+    </div>  
+</div>
+<!-- footer-end -->
+<div class="row bg-secondary text-center p-2 text-white d-flex justify-content-center">
+    <div class="col-md-12">
+        <p>Copyright 1999-2021 by Tecno. All Rights Reversed.</p>
+    </div>
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
